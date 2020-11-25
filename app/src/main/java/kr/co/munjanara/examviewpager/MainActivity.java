@@ -1,21 +1,19 @@
 package kr.co.munjanara.examviewpager;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-import kr.co.munjanara.examviewpager.models.Hero;
-import kr.co.munjanara.examviewpager.models.ICharacter;
-import kr.co.munjanara.examviewpager.models.Magician;
-import kr.co.munjanara.examviewpager.models.Person;
-
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
-import java.nio.channels.IllegalChannelGroupException;
-import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import kr.co.munjanara.examviewpager.models.Hero;
+import kr.co.munjanara.examviewpager.models.Magician;
+import kr.co.munjanara.examviewpager.models.Person;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
         Hero hero2 = new Hero("배트맨");
         hero.attack(hero2);
 
-        Character character = new Hero("슈퍼맨2");
+//        Character character = new Hero("슈퍼맨2");
         Magician magician = new Magician();
-        Character magician2 = new Magician();
+//        Character magician2 = new Magician();
 
-        ICharacter  magician3 = new Magician();
+        Toast.makeText(this, "프로그램 수정", Toast.LENGTH_SHORT).show();
 
     }
 
